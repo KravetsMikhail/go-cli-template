@@ -15,3 +15,6 @@ lint:
 
 build: 
 	go build -o bin/infotypecheck ./
+
+buildWindows: 
+	go build -o bin/infotypecheck.exe ./

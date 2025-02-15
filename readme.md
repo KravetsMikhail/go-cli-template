@@ -14,53 +14,120 @@
 go get -u golang.org/x/lint/golint
 ```
 
+## Установка make
+
+### Windows
+
+1. Откройте PowerShell от имени администратора
+2. Вставьте следующую команду и нажмите Enter
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+3. Установка make с помощью Chocolatey
+
+```bash
+choco install make
+```
+
+4. Проверка установки
+
+```bash
+make -v
+```
+
+### Ubuntu
+
+1. Обновить все пакеты в системе с помощью команды 
+
+```bash
+sudo apt update
+```
+
+2. Установите с помощью команды
+
+```bash
+sudo apt install make -y
+```
+
+3. Проверить установку
+
+```bash
+make -version
+```
+
 ## CLI. Команды
 
 ### Запуск локально
 
-#### 1 Compiled GO
+#### 1 Compiled
+
+- Linux
 
 ``` shell
+go mod vendor
 make -B build
 ```
 
+- Windows
+
+``` shell
+go mod vendor
+make -B buildWindows
+```
+
 #### 2 Cli
+
+- Linux
 
 ``` shell
 ./bin/infotypecheck cli
 ```
 
-### build the code
+- Windows
+
+``` shell
+./bin/infotypecheck.exe cli
+```
+
+### Build the code
 
 ``` shell
 make -B build
 ```
 
-### test the code
+### Test the code
 
 ``` shell
 make test 
 ```
 
-### check the vetting
+### Check the vetting
 
 ``` shell
 make vet
 ```
 
-### check the linting
+### Check the linting
+
+- Linux
 
 ``` shell
 make lint
 ```
 
-### check the formatting
+### Check the formatting
+
+- Linux
 
 ``` shell
 make fmt 
 ```
 
-### ensure everything passes and builds
+### Everything passes and builds
+
+- Linux
 
 ``` shell
 make 
