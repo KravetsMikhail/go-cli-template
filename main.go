@@ -1,9 +1,9 @@
 /*
-Кравец М.А., 2025
+Copyright © 2025 Кравец М.А., kravetsmihail@mail.ru
 */
 package main
 
-import "xlsx-infotype-check/cmd"
+import "go-cli-template/cmd"
 
 func main() {
 	cmd.Execute()

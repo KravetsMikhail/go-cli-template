@@ -14,7 +14,7 @@ lint:
 	go list ./... | grep -v /vendor/ | xargs -L1 golint -set_exit_status
 
 build: 
-	go build -o bin/infotypecheck ./
+	go build -o bin/goclitmpl ./
 
 buildWindows: 
-	go build -o bin/infotypecheck.exe ./
+	go build -o bin/goclitmpl.exe ./

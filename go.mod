@@ -1,4 +1,4 @@
-module xlsx-infotype-check
+module go-cli-template
 
 go 1.22.0
 

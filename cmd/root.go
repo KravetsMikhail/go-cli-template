@@ -11,11 +11,11 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "infotypecheck",
+	Use:   "goclitmpl",
 	Short: "Шаблон проекта",
-	Long: `----------------
-2025 год
-----------------
+	Long: `-----------------------
+Консольное приложение
+-----------------------
 
 Шаблон проекта консольного приложения
 	`,
