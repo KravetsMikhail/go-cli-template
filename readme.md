@@ -1,14 +1,6 @@
 # go-cli-template
 
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
-
-Кравец М.А., 2025 г.
-
-Версия 0.1
-
----
-
-Шаблон проекта консольного приложения с примением библиотеки [Cobra](https://github.com/spf13/cobra).
+![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) Шаблон проекта консольного приложения с примением библиотеки [Cobra](https://github.com/spf13/cobra).
 
 Структура проекта
 
